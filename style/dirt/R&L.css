@@ -1,0 +1,126 @@
+/*login*/
+#login {
+  display: none;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 1;
+  z-index: 997; }
+
+#loginBox {
+  position: fixed;
+  left: 502px;
+  top: 94px;
+  height: 580px;
+  width: 420px;
+  z-index: 998;
+  background-color: white; }
+
+.close {
+  position: fixed;
+  right: 35px;
+  top: 35px;
+  color: white;
+  cursor: pointer; }
+
+#loginBanner {
+  height: 160px;
+  width: 420px;
+  margin-bottom: 60px; }
+
+#loginPhone, #regPhone {
+  margin: 0 0 20px 70px;
+  height: 38px;
+  width: 284px;
+  border: 1px solid lightgray;
+  border-radius: 18px;
+  color: #7d797a;
+  text-indent: 15px; }
+
+#loginPass, #regPass {
+  margin: 0 0 20px 70px;
+  height: 38px;
+  width: 284px;
+  border: 1px solid lightgray;
+  border-radius: 18px;
+  color: #7d797a;
+  text-indent: 15px; }
+
+#loginBtn, #regBtn {
+  margin: 0 0 15px 70px;
+  height: 38px;
+  width: 284px;
+  color: white;
+  background-color: #00338D;
+  border-radius: 18px;
+  border: none; }
+
+#registerP, #loginP {
+  margin-bottom: 30px;
+  margin-left: 200px;
+  color: #3e8ac8;
+  font-size: 12px;
+  cursor: pointer; }
+
+#shejiao {
+  color: #7d797a;
+  margin-left: 155px;
+  margin-bottom: 16px;
+  font-size: 14px; }
+
+#weiboIcon {
+  margin: 0 120px 5px 118px; }
+
+#qqIcon {
+  margin-bottom: 5px; }
+
+#weiboW {
+  float: left;
+  font-size: 14px;
+  color: #7d797a;
+  margin-left: 120px; }
+
+#QQW {
+  float: left;
+  font-size: 14px;
+  color: #7d797a;
+  margin-left: 130px; }
+
+/*register*/
+#register {
+  display: none;
+  position: fixed;
+  left: 502px;
+  top: 94px;
+  height: 580px;
+  width: 420px;
+  z-index: 998;
+  background-color: white; }
+
+#regBanner {
+  height: 160px;
+  width: 420px;
+  margin-bottom: 30px; }
+
+#regCheck {
+  margin: 0 20px 20px 70px;
+  height: 38px;
+  width: 158px;
+  border: 1px solid lightgray;
+  border-radius: 18px;
+  color: #7d797a;
+  text-indent: 15px; }
+
+#getCheck {
+  height: 38px;
+  width: 100px;
+  border-radius: 18px;
+  color: #7d797a;
+  background: lightgray;
+  text-align: center;
+  border: none; }
+
+/*# sourceMappingURL=R&L.css.map */
