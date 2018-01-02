@@ -1,0 +1,29 @@
+$(function(){
+    $('#list').toggle(
+        //header
+        function(){
+            $('.xys').css({'display':'block'});
+            $('html').css({'overflow':'hidden'});
+        },
+        function(){
+            $('.xys').css({'display':'none'});
+            $('html').css({'overflow':'none'});
+        }
+        );
+
+        //xysbox
+        //login
+        $("#indexLogin").mousedown(function(){
+            console.log(1);
+            $("#login").css({"display":"block"});
+        });
+
+        //register
+        $("#registerP").mousedown(function(){
+            $("#register").css({"display":"block"});
+        });
+        //loginP
+        $("#loginP").mousedown(function(){
+            $("#register").css({"display":"none"});
+        });
+});

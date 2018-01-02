@@ -5,6 +5,7 @@
     <title>毕马威 | INDEX</title>
     <link rel="stylesheet" type="text/css" href="./style/dirt/index.css"/>
     <link rel="stylesheet" type="text/css" href="./style/dirt/R&L.css"/>
+    <link rel="stylesheet" type="text/css" href="./style/src/swiper-3.4.2.min.css"/>
 </head>
 <body>
 <!-- header -->
@@ -23,97 +24,25 @@
         <form action="GET" class="searchForm">
                 <input type="text" placeholder="搜索"><input type="button">
         </form>
-        <!--<nav class="headerMenu">-->
-            <!--<div class="menuBox">-->
-            <!--<a>洞察-->
-                <!--<div class="look">-->
-                    <!--<ul class="look1">-->
-                        <!--<li>中国税务快讯</li>-->
-                        <!--<li>中国会计前沿动态</li>-->
-                        <!--<li>香港税务快讯（英文）</li>-->
-                        <!--<li>国际财务报告准则动态</li>-->
-                        <!--<li>中国税务周报</li>-->
-                        <!--<li>所有洞察</li>-->
-                    <!--</ul>-->
-                    <!--<ul class="look2">-->
-                        <!--<img src="image/cq5dam.web.237.158 (1).jpg" alt="">-->
-                        <!--<b>蜕变与升华</b>-->
-                        <!--<i>中国首席执行官2017展望</i>-->
-                    <!--</ul>-->
-                    <!--<ul class="look3">-->
-                        <!--<img src="image/cq5dam.web.237.158 (2).jpg" alt="">-->
-                        <!--<b>大湾区规划</b>-->
-                        <!--<i>驱动成功的关键</i>-->
-                    <!--</ul>-->
-                <!--</div>-->
-            <!--</a>-->
-            <!--<a>行业-->
-                <!--<div class="industry">-->
-                    <!--<ul class="ind1">-->
-                        <!--<li>工业市场</li>-->
-                        <!--<li>生命科学和医疗保健</li>-->
-                        <!--<li>电信</li>-->
-                        <!--<li>汽车</li>-->
-                        <!--<li>私募股权</li>-->
-                    <!--</ul>-->
-                    <!--<ul class="ind2">-->
-                        <!--<li>运输和物流</li>-->
-                        <!--<li>保险</li>-->
-                        <!--<li>信息技术</li>-->
-                        <!--<li>政府机构和公共事务</li>-->
-                        <!--<li>建筑房地产</li>-->
-                    <!--</ul>-->
-                    <!--<ul class="ind3">-->
-                        <!--<li>银行</li>-->
-                        <!--<li>能源和天然资源</li>-->
-                        <!--<li>媒体</li>-->
-                        <!--<li>基建</li>-->
-                        <!--<li>零售及消费品</li>-->
-                        <!--<li>所有行业</li>-->
-                    <!--</ul>-->
-            <!--</div>-->
-            <!--</a>-->
-            <!--<a>服务-->
-                <!--<div class="server">-->
-                    <!--<ul class="ser1">-->
-                        <!--<li></li>-->
-                        <!--<li></li>-->
-                        <!--<li></li>-->
-                        <!--<li></li>-->
-                        <!--<li></li>-->
-                    <!--</ul>-->
-                    <!--<ul class="ser2">-->
-                        <!--<li></li>-->
-                        <!--<li></li>-->
-                        <!--<li></li>-->
-                        <!--<li></li>-->
-                        <!--<li></li>-->
-                    <!--</ul>-->
-                <!--</div>-->
-            <!--</a>-->
-            <!--<a>活动-->
-                <!--<div class="active"></div>-->
-            <!--</a>-->
-            <!--</div>-->
-        <!--</nav>     -->
+        <div id="list">
+            <img src="image/list.png" alt="">
+        </div>
+
     </div>
 </header>
-<!-------------------------------------------------------------------- banner -->
-<div class="banner">
-    <div class="swiper">
-        <a href="javascript:;">
-            <img src="image/cq5dam.web.1082.547.jpg">
-        </a>
-        <a href="javascript:;">
-                <img src="image/cq5dam.web.1082.547 (3).jpg">
-        </a>
-        <a href="javascript:;">
-                <img src="image/cq5dam.web.1082.547 (1).jpg">
-        </a>
-        <a href="javascript:;">
-                <img src="image/cq5dam.web.1082.547 (2).jpg">
-        </a>
+<!-- --------------------------------------------------------carousel -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="image/cq5dam.web.1082.547.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="image/cq5dam.web.1082.547 (3).jpg" alt=""></div>
+        <div class="swiper-slide"><img src="image/cq5dam.web.1082.547 (2).jpg" alt=""></div>
+        <div class="swiper-slide"><img src="image/cq5dam.web.1082.547 (1).jpg" alt=""></div>
     </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+    <!-- 如果需要导航按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
 </div>
 <!-----------------------------------------------------------------------content-->
 <div class="content">
@@ -178,7 +107,6 @@
     <!--<div class="content31"></div>-->
     <!--<div class="content31"></div>-->
 
-
 </div>
 <!-- -------------------------------------------------------------------footer -->
 <div class="footer">
@@ -222,12 +150,12 @@
 <div id="register">
     <h1 class="close">X</h1>
     <img id="regBanner" src="image/cq5dam.web.1082.378.jpg"/>
-    <from method="post" action="register.php">
+    <form method="post" action="register.php">
         <input type="text" id="regPhone" name="userId" placeholder="手机号" />
-        <input type="text" id="regCheck" placeholder="验证码" /><input id="getCheck" type="text" value="获取验证码"/>
+        <input type="text" id="regChcek" placeholder="验证码"/><input id="getCheck" type="text" value="获取验证码"/>
         <input type="text" id="regPass" name="userPass" placeholder="密码" />
         <input type="submit" id="regBtn" value="注册" />
-    </from>
+    </form>
     <p id="loginP">登录</p>
     <p id="shejiao">社交账号快速登录</p>
     <img id="weiboIcon" src="image/weibo.jpg"/>
@@ -235,7 +163,28 @@
     <p id="weiboW">微博</p>
     <p id="QQW">QQ</p>
 </div>
+
+<!----------------------------------------------------------------------------响应式主页-->
+<div class="xys">
+    <ul>
+        <li><i class="reg"><img src="image/reg.png" alt="注册"></i><i class="log"><img src="image/login.png" alt="登录"></i></li>
+        <li><p>洞察</li>
+        <li><p>行业</p><span></span></li>
+        <li><p>服务</p><span></span></li>
+        <li><p>活动</p></li>
+        <li><p>加入毕马威</p></li>
+        <li><p>老友汇</p></li>
+        <li><p>新闻传媒中心</p></li>
+        <li><p>关注毕马威</p></li>
+        <li><p>关于我们</p></li>
+        <li><p>联系我们</p></li>
+    </ul>
+</div>
 </body>
 </html>
 <script type="text/javascript" src="js/jquery.js" ></script>
 <script type="text/javascript" src="js/lg.js" ></script>
+<script type="text/javascript" src="js/swiper-3.4.2.min.js" ></script>
+<script type="text/javascript" src="js/carousel.js" ></script>
+<script type="text/javascript" src="js/index.js" ></script>
+
